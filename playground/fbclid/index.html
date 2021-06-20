@@ -1,1 +1,76 @@
-<!DOCTYPE html><html><head><meta charset="utf-8" /><link href="https://www.dadankun.my.id/playground/fbclid/" rel="canonical" /><title>Delete fbclid = Dadankun</title><link rel="shortcut icon" href="https://www.r-sights.com/favicon.ico"></head><body><h1>Delete fbclid dari facebook - Dadankun</h1><p>Ini adalah untuk menghapus parameter fbclid dari facebook atau facebook analytics.</p><p>Silahkan taruh di bawah code<pre>&lt;/body&gt;</pre>atau di atas code<pre>&lt;/head&gt;</pre><p></p><p>Code:</p><pre><code> &lt;script type=&quot;text/javascript&quot;&gt; (function () { var param = &#039;fbclid&#039;; if (location.search.indexOf(param + &#039;=&#039;) !== -1) { var replace = &#039;&#039;; try { var url = new URL(location); url.searchParams.delete(param); replace = url.href; } catch (ex) { var regExp = new RegExp(&#039;[?&amp;]&#039; + param + &#039;=.*$&#039;); replace = location.search.replace(regExp, &#039;&#039;); replace = location.pathname + replace + location.hash; } history.replaceState(null, &#039;&#039;, replace); } })(); &lt;/script&gt; </code></pre><div>Click link below for demo</div> <a href="https://www.dadankun.my.id/playground/fbclid/?fbclid=IwAR1_DPauAjU7BdosESvGJRq1VDmU8db06YtJd7_J92uuj7YZfKP40Dr20rM">https://www.dadankun.my.id/playground/fbclid/?fbclid=IwAR1_DPauAjU7BdosESvGJRq1VDmU8db06YtJd7_J92uuj7YZfKP40Dr20rM</a><p></p><p></p><div>Source: <a href='https://www.michalspacek.cz/zmena-url-a-skryvani-fbclid-pomoci-javascriptu'>Link 1</a></div><div>Source: <a href='https://gist.github.com/hehe24h/acfa46c57bc4f37a5ca6814cb1652537'>Link 2</a></div><p></p><p> <button><a href="https://trakteer.id/rsight"> Donate</a></button> <button><a href="https://web.facebook.com/rsights.official/"> Like FB</a></button> <button><a href="https://www.r-sights.com/"> Website</a></button></p></body> <script type="text/javascript">(function(){var param='fbclid';if(location.search.indexOf(param+'=')!==-1){var replace='';try{var url=new URL(location);url.searchParams.delete(param);replace=url.href;}catch(ex){var regExp=new RegExp('[?&]'+param+'=.*$');replace=location.search.replace(regExp,'');replace=location.pathname+replace+location.hash;} history.replaceState(null,'',replace);}})();</script> </html>
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <link href="https://www.dadankun.my.id/playground/fbclid/" rel="canonical" />
+    <title>Delete fbclid = Dadankun</title>
+    <link rel="shortcut icon" href="https://www.r-sights.com/favicon.ico">
+    <script async custom-element="amp-iframe" src="https://cdn.ampproject.org/v0/amp-iframe-0.1.js"></script>
+</head>
+
+<body>
+    <h1>Delete fbclid dari facebook - Dadankun</h1>
+    <p>Ini adalah untuk menghapus parameter fbclid dari facebook atau facebook analytics.</p>
+    <p>Silahkan taruh di bawah code
+    <pre>&lt;/body&gt;</pre> atau di atas code
+    <pre>&lt;/head&gt;</pre>
+    </p>
+    <p>Code:</p>
+    <pre><code>
+        &lt;script type=&quot;text/javascript&quot;&gt;
+        (function () {
+      var param = &#039;fbclid&#039;;
+      if (location.search.indexOf(param + &#039;=&#039;) !== -1) {
+          var replace = &#039;&#039;;
+          try {
+              var url = new URL(location);
+              url.searchParams.delete(param);
+              replace = url.href;
+          } catch (ex) {
+              var regExp = new RegExp(&#039;[?&amp;]&#039; + param + &#039;=.*$&#039;);
+              replace = location.search.replace(regExp, &#039;&#039;);
+              replace = location.pathname + replace + location.hash;
+          }
+          history.replaceState(null, &#039;&#039;, replace);
+      }
+  })();
+    &lt;/script&gt;
+    </code></pre>
+    <p>Copy: <amp-iframe src='https://dhadhan.github.io/r-sights/copier2.html#%3Cscript%20type%3D%27text%2Fjavascript%27%3E%0A%28function%20%28%29%20%7B%0A%20%20%20%20var%20param%20%3D%20%27fbclid%27%3B%0A%20%20%20%20if%20%28location.search.indexOf%28param%20%2B%20%27%3D%27%29%20%21%3D%3D%20-1%29%20%7B%0A%20%20%20%20%20%20%20%20var%20replace%20%3D%20%27%27%3B%0A%20%20%20%20%20%20%20%20try%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20var%20url%20%3D%20new%20URL%28location%29%3B%0A%20%20%20%20%20%20%20%20%20%20%20%20url.searchParams.delete%28param%29%3B%0A%20%20%20%20%20%20%20%20%20%20%20%20replace%20%3D%20url.href%3B%0A%20%20%20%20%20%20%20%20%7D%20catch%20%28ex%29%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20var%20regExp%20%3D%20new%20RegExp%28%27%5B%3F%26%5D%27%20%2B%20param%20%2B%20%27%3D.%2A%24%27%29%3B%0A%20%20%20%20%20%20%20%20%20%20%20%20replace%20%3D%20location.search.replace%28regExp%2C%20%27%27%29%3B%0A%20%20%20%20%20%20%20%20%20%20%20%20replace%20%3D%20location.pathname%20%2B%20replace%20%2B%20location.hash%3B%0A%20%20%20%20%20%20%20%20%7D%0A%20%20%20%20%20%20%20%20history.replaceState%28null%2C%20%27%27%2C%20replace%29%3B%0A%20%20%20%20%7D%0A%7D%29%28%29%3B%0A%3C%2Fscript%3E' frameborder='0' height='24' id='copylinkpost-on-home' layout='fixed' sandbox='allow-scripts' width='24'><div class='amp-hidden' placeholder=''></div></amp-iframe></p>
+    <div>Click link below for demo</div>
+    <a
+        href="https://www.dadankun.my.id/playground/fbclid/?fbclid=IwAR1_DPauAjU7BdosESvGJRq1VDmU8db06YtJd7_J92uuj7YZfKP40Dr20rM">https://www.dadankun.my.id/playground/fbclid/?fbclid=IwAR1_DPauAjU7BdosESvGJRq1VDmU8db06YtJd7_J92uuj7YZfKP40Dr20rM</a>
+    <p></p>
+    <p></p>
+    <div>Source: <a href='https://www.michalspacek.cz/zmena-url-a-skryvani-fbclid-pomoci-javascriptu'>Link 1</a></div>
+    <div>Source: <a href='https://gist.github.com/hehe24h/acfa46c57bc4f37a5ca6814cb1652537'>Link 2</a></div>
+    <p></p>
+    <p>
+        <button><a href="https://trakteer.id/rsight"> Donate</a></button>
+        <button><a href="https://web.facebook.com/rsights.official/"> Like FB</a></button>
+        <button><a href="https://www.r-sights.com/"> Website</a></button>
+
+    </p>
+</body>
+<!--delete fbclid-->
+<script type="text/javascript">
+    (function () {
+        var param = 'fbclid';
+        if (location.search.indexOf(param + '=') !== -1) {
+            var replace = '';
+            try {
+                var url = new URL(location);
+                url.searchParams.delete(param);
+                replace = url.href;
+            } catch (ex) {
+                var regExp = new RegExp('[?&]' + param + '=.*$');
+                replace = location.search.replace(regExp, '');
+                replace = location.pathname + replace + location.hash;
+            }
+            history.replaceState(null, '', replace);
+        }
+    })();
+</script>
+
+</html>
