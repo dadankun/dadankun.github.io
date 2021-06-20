@@ -242,11 +242,6 @@ pre[class*=language-] {
     padding: 0;
     font-family: 'Poppins', sans-serif;
 }
-
-body {
-    background: linear-gradient(#7d6cfc, #c635ea);
-}
-
 .action {
     position: fixed;
     bottom: 50px;
@@ -325,7 +320,7 @@ body {
 }
 
 body {
-
+    background: linear-gradient(#7d6cfc, #c635ea);
     
     padding-right: 10px;
     padding-left: 10px;
