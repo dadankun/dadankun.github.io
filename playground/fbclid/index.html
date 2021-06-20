@@ -1,24 +1,13 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8" />
-    <link href="https://www.dadankun.my.id/" rel="canonical" />
-        <title>Delete fbclid = Dadankun</title>
-        <script type="text/javascript">
-            window.onload = function () {
-                var canonical = "";
-                var links = document.getElementsByTagName("link");
-                for (var i = 0; i < links.length; i ++) {
-                    if (links[i].getAttribute("rel") === "canonical") {
-                        canonical = links[i].getAttribute("href")
-                    }
-                }
-                alert(canonical);
-            };
-        </script>
 
-  </head>
-  <body>
+<head>
+    <meta charset="utf-8" />
+    <link href="https://www.dadankun.my.id/playground/fbclid/" rel="canonical" />
+    <title>Delete fbclid = Dadankun</title>
+</head>
+
+<body>
     <h1>Delete fbclid dari facebook - Dadankun</h1>
     <pre><code>
         &lt;script type=&quot;text/javascript&quot;&gt;
@@ -40,27 +29,33 @@
   })();
     &lt;/script&gt;
     </code></pre>
+    <div>Click link below for demo</div>
+    <a
+        href="https://www.dadankun.my.id/playground/fbclid/?fbclid=IwAR1_DPauAjU7BdosESvGJRq1VDmU8db06YtJd7_J92uuj7YZfKP40Dr20rM">https://www.dadankun.my.id/playground/fbclid/?fbclid=IwAR1_DPauAjU7BdosESvGJRq1VDmU8db06YtJd7_J92uuj7YZfKP40Dr20rM</a>
+    <p></p>
+    <p></p>
     <div>Source: <a href='https://www.michalspacek.cz/zmena-url-a-skryvani-fbclid-pomoci-javascriptu'>Link 1</a></div>
     <div>Source: <a href='https://gist.github.com/hehe24h/acfa46c57bc4f37a5ca6814cb1652537'>Link 2</a></div>
-    
-  </body>
-  <!--delete fbclid-->
-  <script type="text/javascript">
-      (function () {
-    var param = 'fbclid';
-    if (location.search.indexOf(param + '=') !== -1) {
-        var replace = '';
-        try {
-            var url = new URL(location);
-            url.searchParams.delete(param);
-            replace = url.href;
-        } catch (ex) {
-            var regExp = new RegExp('[?&]' + param + '=.*$');
-            replace = location.search.replace(regExp, '');
-            replace = location.pathname + replace + location.hash;
+
+</body>
+<!--delete fbclid-->
+<script type="text/javascript">
+    (function () {
+        var param = 'fbclid';
+        if (location.search.indexOf(param + '=') !== -1) {
+            var replace = '';
+            try {
+                var url = new URL(location);
+                url.searchParams.delete(param);
+                replace = url.href;
+            } catch (ex) {
+                var regExp = new RegExp('[?&]' + param + '=.*$');
+                replace = location.search.replace(regExp, '');
+                replace = location.pathname + replace + location.hash;
+            }
+            history.replaceState(null, '', replace);
         }
-        history.replaceState(null, '', replace);
-    }
-})();
-  </script>
+    })();
+</script>
+
 </html>
