@@ -242,6 +242,12 @@ pre[class*=language-] {
     padding: 0;
     font-family: 'Poppins', sans-serif;
 }
+
+body {
+    min-height: 100vh;
+    background: linear-gradient(#7d6cfc, #c635ea);
+}
+
 .action {
     position: fixed;
     bottom: 50px;
@@ -320,8 +326,9 @@ pre[class*=language-] {
 }
 
 body {
-    background: linear-gradient(#7d6cfc, #c635ea);
-    
+    margin-right: auto;
+    margin-left: auto;
+    max-width: 960px;
     padding-right: 10px;
     padding-left: 10px;
     margin-top: 2rem;
