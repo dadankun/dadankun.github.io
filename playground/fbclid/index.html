@@ -1,0 +1,178 @@
+<html>
+
+<head>
+	<link href="https://www.dadankun.my.id/playground/fbclid/" rel="canonical" />
+    <title>Delete fbclid - Dadankun</title>
+    <link rel="shortcut icon" href="https://www.r-sights.com/favicon.ico">
+    <!-- Get lastest Jquery : https://cdnjs.com/libraries/jquery -->
+    <script src="assets/js/jquery/3.3.1/jquery.js"></script>
+    <!-- Get lastest prism : https://cdnjs.com/libraries/prism -->
+    <script src="assets/js/prism/1.10.0/prism.min.js"></script>
+    <!-- Get lastest clipboard.js : https://cdnjs.com/libraries/clipboard.js -->
+    <script src="assets/js/clipboard/1.7.1/clipboard.min.js"></script>
+    <!-- <script type="text/javascript" src="https://www.jqueryscript.net/demo/Copy-To-Clipboard-For-Syntax-Highlighter/code-box-copy/js/code-box-copy.js"></script> -->
+    <link rel="stylesheet" href="assets/all_style.css">
+    <link href="assets/uiconns/css/uicons-regular-rounded.css" rel="stylesheet">
+</head>
+
+<body>
+    <div class="text-center1">
+        <h1>Remove 'fbclid' Facebook Analytics</h1>
+    </div>
+    <p>Click button bellow for demo</p>
+    <div class="page">
+        <label class="field field_v2">
+            <input class="field__input"
+                value="https://www.dadankun.my.id/playground/fbclid/?fbclid=IwAR1_DPauAjU7BdosESvGJRq1VDmU8db06YtJd7_J92uuj7YZfKP40Dr20rM"
+                readonly>
+            <span class="field__label-wrap">
+                <span class="field__label">Test Link</span>
+            </span>
+        </label>
+    </div>
+    <div class="profile-message text-center1">
+        <a class="contact message-btn form-sub text-align-center w-100 " rel="tipsy" data-message-recipient="414694"
+            data-button-location="profile" href="#" title="Demo">
+            <i class="fi-rr-eye"></i>
+            <span>Demo</span>
+        </a>
+    </div>
+    <p></p>
+    <p>Code:</p>
+    <div class="code-box-copy">
+        <button class="code-box-copy__btn" data-clipboard-target="#example-html" title="Copy"></button>
+        <pre><code class="language-html" id="example-html">&lt;script type=&#039;text/javascript&#039;&gt;
+            (function () {
+                var param = &#039;fbclid&#039;;
+                if (location.search.indexOf(param + &#039;=&#039;) !== -1) {
+                    var replace = &#039;&#039;;
+                    try {
+                        var url = new URL(location);
+                        url.searchParams.delete(param);
+                        replace = url.href;
+                    } catch (ex) {
+                        var regExp = new RegExp(&#039;[?&amp;]&#039; + param + &#039;=.*$&#039;);
+                        replace = location.search.replace(regExp, &#039;&#039;);
+                        replace = location.pathname + replace + location.hash;
+                    }
+                    history.replaceState(null, &#039;&#039;, replace);
+                }
+            })();
+&lt;/script&gt;</code></pre>
+    </div>
+
+    <div class="action" onclick="actionToggle();">
+        <span>+</span>
+        <ul>
+            <li><a href="https://web.facebook.com/rsights.official/">
+                    <svg id="Bold" enable-background="new 0 0 24 24" viewBox="0 0 24 24" width="25"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="m15.997 3.985h2.191v-3.816c-.378-.052-1.678-.169-3.192-.169-3.159 0-5.323 1.987-5.323 5.639v3.361h-3.486v4.266h3.486v10.734h4.274v-10.733h3.345l.531-4.266h-3.877v-2.939c.001-1.233.333-2.077 2.051-2.077z" />
+                    </svg>Like Facebook</a>
+            </li>
+			<li><a href='https://www.r-sights.com/'><svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" width='25px' xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 26 26" style="enable-background:new 0 0 26 26;" xml:space="preserve"> <g> <path style="fill:#030104;" d="M8.083,11.222L6.419,15c-0.041,0.094-0.144,0.154-0.257,0.154H5.31 c-0.113,0-0.216-0.061-0.256-0.154l-0.79-1.803c-0.077-0.178-0.147-0.348-0.213-0.517c-0.073,0.186-0.148,0.359-0.223,0.525 l-0.833,1.8c-0.042,0.091-0.144,0.149-0.255,0.149H1.888c-0.117,0-0.219-0.063-0.259-0.158l-1.557-3.779 c-0.03-0.074-0.018-0.156,0.034-0.221s0.135-0.103,0.225-0.103H1.29c0.121,0,0.227,0.069,0.263,0.169l0.684,1.92 c0.057,0.162,0.11,0.315,0.159,0.461c0.06-0.146,0.125-0.3,0.194-0.463l0.842-1.932c0.041-0.093,0.143-0.155,0.256-0.155H4.48 c0.115,0,0.217,0.063,0.258,0.157l0.798,1.89c0.072,0.17,0.136,0.329,0.195,0.479c0.049-0.142,0.106-0.296,0.171-0.465l0.737-1.898 c0.038-0.098,0.143-0.164,0.26-0.164h0.926c0.091,0,0.175,0.039,0.227,0.104C8.105,11.064,8.115,11.147,8.083,11.222z M17.005,11.222L15.341,15c-0.041,0.094-0.144,0.154-0.256,0.154h-0.854c-0.113,0-0.215-0.061-0.256-0.154l-0.789-1.803 c-0.078-0.178-0.148-0.348-0.214-0.517c-0.073,0.186-0.148,0.359-0.223,0.525l-0.833,1.8c-0.042,0.091-0.143,0.149-0.255,0.149 h-0.853c-0.116,0-0.219-0.063-0.259-0.158l-1.557-3.779c-0.03-0.074-0.018-0.156,0.034-0.221c0.052-0.064,0.136-0.103,0.225-0.103 h0.959c0.121,0,0.227,0.069,0.263,0.169l0.683,1.92c0.057,0.162,0.11,0.315,0.161,0.461c0.059-0.146,0.123-0.3,0.192-0.463 l0.843-1.932c0.04-0.093,0.142-0.155,0.256-0.155H13.4c0.115,0,0.218,0.063,0.258,0.157l0.799,1.89 c0.071,0.17,0.135,0.329,0.193,0.479c0.051-0.142,0.106-0.296,0.172-0.465l0.737-1.898c0.038-0.098,0.144-0.164,0.261-0.164h0.926 c0.092,0,0.177,0.039,0.227,0.104C17.026,11.064,17.038,11.147,17.005,11.222z M25.926,11.222L24.263,15 c-0.042,0.094-0.144,0.154-0.257,0.154h-0.853c-0.113,0-0.216-0.061-0.256-0.154l-0.789-1.803 c-0.078-0.178-0.148-0.348-0.214-0.517c-0.073,0.186-0.149,0.359-0.224,0.525l-0.833,1.8c-0.042,0.091-0.144,0.149-0.255,0.149 H19.73c-0.117,0-0.22-0.063-0.26-0.158l-1.557-3.779c-0.029-0.074-0.019-0.156,0.033-0.221s0.136-0.103,0.226-0.103h0.96 c0.121,0,0.227,0.069,0.262,0.169l0.684,1.92c0.057,0.162,0.11,0.315,0.16,0.461c0.059-0.146,0.123-0.3,0.192-0.463l0.843-1.932 c0.041-0.093,0.143-0.155,0.257-0.155h0.791c0.115,0,0.218,0.063,0.258,0.157l0.798,1.89c0.072,0.17,0.137,0.329,0.196,0.479 c0.049-0.142,0.106-0.296,0.171-0.465l0.738-1.898c0.037-0.098,0.142-0.164,0.26-0.164h0.926c0.092,0,0.176,0.039,0.227,0.104 C25.946,11.064,25.958,11.147,25.926,11.222z"/> <g> <path style="fill:#030104;" d="M2.71,9c0.283-0.718,0.637-1.401,1.057-2.037C3.829,6.975,3.887,7,3.952,7h1.88 c-0.199,0.634-0.355,1.309-0.49,2h2.055c0.155-0.699,0.335-1.376,0.562-2h9.986c0.227,0.624,0.407,1.301,0.562,2h2.055 c-0.135-0.691-0.291-1.366-0.49-2h1.88c0.065,0,0.123-0.025,0.186-0.037C22.556,7.599,22.911,8.282,23.194,9h2.121 c-1.691-5.216-6.591-9-12.363-9S2.28,3.784,0.588,9H2.71z M20.478,5H19.29c-0.258-0.543-0.542-1.05-0.851-1.519 C19.179,3.909,19.861,4.419,20.478,5z M12.952,2c1.551,0,2.983,1.154,4.062,3H8.89C9.969,3.154,11.401,2,12.952,2z M7.463,3.481 C7.155,3.95,6.871,4.457,6.613,5H5.426C6.043,4.419,6.725,3.909,7.463,3.481z"/> <path style="fill:#030104;" d="M23.194,17c-0.283,0.719-0.638,1.4-1.057,2.037C22.075,19.025,22.017,19,21.952,19h-1.881 c0.199-0.634,0.355-1.309,0.49-2h-2.055c-0.154,0.699-0.335,1.377-0.562,2H7.959c-0.227-0.623-0.407-1.301-0.562-2H5.343 c0.135,0.691,0.291,1.366,0.49,2H3.952c-0.065,0-0.123,0.025-0.185,0.037C3.348,18.4,2.993,17.719,2.71,17H0.588 c1.692,5.216,6.592,9,12.364,9s10.672-3.784,12.363-9H23.194z M5.426,21h1.188c0.258,0.543,0.542,1.051,0.85,1.519 C6.725,22.091,6.043,21.581,5.426,21z M12.952,24c-1.551,0-2.983-1.154-4.062-3h8.123C15.935,22.846,14.503,24,12.952,24z M18.44,22.519c0.309-0.468,0.593-0.976,0.851-1.519h1.188C19.861,21.581,19.179,22.091,18.44,22.519z"/> </g> </g> <g> </g> <g> </g> <g> </g> <g> </g> <g> </g> <g> </g> <g> </g> <g> </g> <g> </g> <g> </g> <g> </g> <g> </g> <g> </g> <g> </g> <g> </g> </svg>Website</a></li>
+			<li><a href='https://paypal.me/dhadhan'<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" width='25px' xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;" xml:space="preserve"> <g> <g> <path d="M478.609,99.726H441.34c4.916-7.78,8.16-16.513,9.085-25.749C453.38,44.46,437.835,18,411.37,6.269 c-24.326-10.783-51.663-6.375-71.348,11.479l-47.06,42.65c-9.165-10.024-22.34-16.324-36.962-16.324 c-14.648,0-27.844,6.32-37.011,16.375l-47.12-42.706C152.152-0.111,124.826-4.502,100.511,6.275 C74.053,18.007,58.505,44.476,61.469,73.992c0.927,9.229,4.169,17.958,9.084,25.734H33.391C14.949,99.726,0,114.676,0,133.117 v50.087c0,9.22,7.475,16.696,16.696,16.696h478.609c9.22,0,16.696-7.475,16.696-16.696v-50.087 C512,114.676,497.051,99.726,478.609,99.726z M205.913,94.161v5.565H127.37c-20.752,0-37.084-19.346-31.901-40.952 c2.283-9.515,9.151-17.626,18.034-21.732c12.198-5.638,25.71-3.828,35.955,5.445l56.469,51.182 C205.924,93.834,205.913,93.996,205.913,94.161z M417.294,69.544c-1.244,17.353-16.919,30.184-34.316,30.184h-76.891v-5.565 c0-0.197-0.012-0.392-0.014-0.589c12.792-11.596,40.543-36.748,55.594-50.391c8.554-7.753,20.523-11.372,31.587-8.072 C409.131,39.847,418.455,53.349,417.294,69.544z"/> </g> </g> <g> <g> <path d="M33.391,233.291v244.87c0,18.442,14.949,33.391,33.391,33.391h155.826V233.291H33.391z"/> </g> </g> <g> <g> <path d="M289.391,233.291v278.261h155.826c18.442,0,33.391-14.949,33.391-33.391v-244.87H289.391z"/> </g> </g> <g> </g> <g> </g> <g> </g> <g> </g> <g> </g> <g> </g> <g> </g> <g> </g> <g> </g> <g> </g> <g> </g> <g> </g> <g> </g> <g> </g> <g> </g> </svg>Donate</a></li>
+            <li><a href='https://gist.github.com/hehe24h/acfa46c57bc4f37a5ca6814cb1652537'<svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 283.178 283.178" style="enable-background:new 0 0 283.178 283.178;" xml:space="preserve" width='25'> <g> <path style="fill:#231F20;" d="M254.812,140.713h-20c-4.142,0-7.5,3.358-7.5,7.5v91.186c0,4.84-3.939,8.778-8.779,8.778H43.776 c-4.839,0-8.775-3.938-8.775-8.778V64.645c0-4.841,3.936-8.78,8.775-8.78h95.855c4.142,0,7.5-3.358,7.5-7.5v-20 c0-4.142-3.358-7.5-7.5-7.5H43.776c-24.138,0-43.775,19.64-43.775,43.78v174.755c0,24.14,19.638,43.778,43.775,43.778h174.756 c24.14,0,43.779-19.639,43.779-43.778v-91.186C262.312,144.071,258.954,140.713,254.812,140.713z"/> <path style="fill:#231F20;" d="M275.677,0h-79.553c-4.142,0-7.5,3.358-7.5,7.5v20c0,4.142,3.358,7.5,7.5,7.5h27.304 L120.683,137.743c-2.929,2.929-2.929,7.677,0,10.607l14.142,14.143c1.407,1.407,3.314,2.197,5.304,2.197 c1.989,0,3.897-0.79,5.303-2.197L248.177,59.748v27.303c0,4.142,3.358,7.5,7.5,7.5h20c4.142,0,7.5-3.358,7.5-7.5V7.5 C283.177,3.358,279.819,0,275.677,0z"/> </g> <g> </g> <g> </g> <g> </g> <g> </g> <g> </g> <g> </g> <g> </g> <g> </g> <g> </g> <g> </g> <g> </g> <g> </g> <g> </g> <g> </g> <g> </g> </svg>Source</a></li>
+             <!--<li><div class="i-local"><i class='fi fi-rr-link'></i>Share on VK</div> </li>-->
+        </ul>
+    </div>
+
+</body>
+<!--delete fbclid-->
+<script type="text/javascript">
+    (function () {
+        var param = 'fbclid';
+        if (location.search.indexOf(param + '=') !== -1) {
+            var replace = '';
+            try {
+                var url = new URL(location);
+                url.searchParams.delete(param);
+                replace = url.href;
+            } catch (ex) {
+                var regExp = new RegExp('[?&]' + param + '=.*$');
+                replace = location.search.replace(regExp, '');
+                replace = location.pathname + replace + location.hash;
+            }
+            history.replaceState(null, '', replace);
+        }
+    })();
+</script>
+<script>
+    ;
+    (function ($, undefined) {
+
+        var pluginName = 'codeBoxCopy',
+            defaults = {
+                tooltipText: 'Copied',
+                tooltipShowTime: 1000,
+                tooltipFadeInTime: 300,
+                tooltipFadeOutTime: 300
+            };
+
+        function Plugin(element, options) {
+            this.element = element;
+            this.options = $.extend({}, defaults, options);
+            this._defaults = defaults;
+            this._name = pluginName;
+            this.init();
+        }
+
+        Plugin.prototype = {
+
+            init: function () {
+
+                var $btn, $tooltip, btn, tooltip, opts, clipboard;
+
+                btn = this.element.querySelector('.code-box-copy__btn');
+
+                if (!btn) return;
+
+                opts = this.options;
+                clipboard = new Clipboard(btn);
+
+                clipboard.on('success', function (e) {
+                    $btn = $(e.trigger);
+                    $btn.prop('disabled', true);
+
+                    tooltip = '<span class="code-box-copy__tooltip">';
+                    tooltip += opts.tooltipText;
+                    tooltip += '</span>';
+                    $(tooltip).prependTo($btn);
+                    $tooltip = $btn.find('.code-box-copy__tooltip');
+                    $tooltip.fadeIn(opts.tooltipFadeInTime);
+
+                    setTimeout(function () {
+                        $tooltip.fadeOut(opts.tooltipFadeOutTime, function () {
+                            $tooltip.remove();
+                        });
+                        $btn.prop('disabled', false);
+                    }, opts.tooltipShowTime);
+                });
+            }
+        };
+
+        $.fn[pluginName] = function (options) {
+            return this.each(function () {
+                if (!$.data(this, 'plugin_' + pluginName)) {
+                    $.data(this, 'plugin_' + pluginName,
+                        new Plugin(this, options));
+                }
+            });
+        };
+    })(jQuery);
+
+    $('.code-box-copy').codeBoxCopy({
+        tooltipText: 'Copied',
+        tooltipShowTime: 500,
+        tooltipFadeInTime: 500,
+        tooltipFadeOutTime: 700
+    });;
+
+</script>
+<script>function actionToggle() {
+        const action = document.querySelector('.action');
+        action.classList.toggle('active')
+    }</script>
+
+</html>
