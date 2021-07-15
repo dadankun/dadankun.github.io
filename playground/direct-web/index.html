@@ -1,0 +1,22 @@
+<style>
+  [id^=NotiflixConfirmWrap]>div[class*="-content"]>div[class*="-head"]>div {
+    text-align: left !important;
+  }
+</style>
+<script
+  src='https://cdn.jsdelivr.net/gh/dadankun/dadankun.github.io/playground/fbclid/assets/js/jquery/3.5.1/jquery.min.js'></script>
+<script
+  src="https://cdn.jsdelivr.net/gh/dadankun/dadankun.github.io/playground/Notiflix/Notiflix-2.7.0/dist/notiflix-aio-2.7.0.min.js"></script>
+
+
+<script>
+  Notiflix.Confirm.Init({ titleColor: "#3260c6", fontFamily: "Nunito Sans", cancelButtonBackground: "#bfbfbf", okButtonBackground: "#324ac6", backgroundColor: "#ffffff", borderRadius: "10px", okButtonColor: "#ffffff", plainText: false, messageMaxLength: 1000, width: '500px' });
+  Notiflix.Confirm.Show('Term and Conditions', 'Dengan Klik/Mengakses Link/Tautan/Tombol Yes di bawah anda telah menyetujui bahwa:<ol><li>Pembuat dapat merubah peraturan ini tanpa pemberitahuan sebelumnya.</li><li>Link/Tautan yang telah dibuka sudah menjadi tanggung jawab anda</li><li>Dilarang membagikan link/tautan tersebut kepada yang lain</li><li>Content yang diberikan jika terdapat kesalahan Bukan kesalahan Kami.</li><li>Jika terdapat masalah di masa depan yang melibatkan apa yang kami bagikan. Masalah tersebut bukan tanggung jawab kami.</li></ol><br/><br/>Apakah anda menyetujui Terms and Conditions?', 'Yes', 'No',
+    function () { // Yes button callback 
+      window.location.replace("https://trakteer.id/rsight/showcase");Notiflix.Loading.Circle();
+    },
+    function () { // No button callback 
+      window.close();
+    });
+
+</script>
